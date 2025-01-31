@@ -85,7 +85,6 @@ pub mod ffi {
 
         // Two stage init
         fn redirect_second_stage(self: &MagiskInit);
-        fn first_stage(self: &MagiskInit);
 
         // SELinux
         unsafe fn patch_sepolicy(self: &MagiskInit, in_: *const c_char, out: *const c_char);
