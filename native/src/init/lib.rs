@@ -12,6 +12,7 @@ mod mount;
 mod rootdir;
 mod getinfo;
 mod init;
+mod twostage;
 
 #[cxx::bridge]
 pub mod ffi {
@@ -85,7 +86,6 @@ pub mod ffi {
         // Two stage init
         fn redirect_second_stage(self: &MagiskInit);
         fn first_stage(self: &MagiskInit);
-        fn second_stage(self: &mut MagiskInit);
 
         // SELinux
         unsafe fn patch_sepolicy(self: &MagiskInit, in_: *const c_char, out: *const c_char);
