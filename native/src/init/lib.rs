@@ -53,9 +53,6 @@ pub mod ffi {
 
     extern "Rust" {
         fn print(self: &BootConfig);
-        fn prepare_data(self: &MagiskInit);
-        fn legacy_system_as_root(self: &mut MagiskInit);
-        fn restore_ramdisk_init(self: &MagiskInit);
     }
 
     unsafe extern "C++" {
