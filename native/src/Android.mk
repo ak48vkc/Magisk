@@ -68,7 +68,6 @@ LOCAL_SRC_FILES := \
     init/mount.cpp \
     init/rootdir.cpp \
     init/getinfo.cpp \
-    init/twostage.cpp \
     init/selinux.cpp \
     init/init-rs.cpp
 
